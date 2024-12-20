@@ -5,11 +5,11 @@
 // Se dobbiamo confrontare qualcosa che “cosa” ci serve?
 
 // generiamo numero utente
-let userNumber = Math.floor(Math.random() * 7);
+let userNumber = Math.floor(Math.random() * 6) + 1 ;
 console.log("il numero dell'utente è: ", userNumber);
 
 // generiamo numero computer
-let computerNumber = Math.floor(Math.random() * 7);
+let computerNumber = Math.floor(Math.random() * 6) + 1;
 console.log("il numero del computer è: ", computerNumber);
 
 // SE l'utente ha il numero più alto vince 
