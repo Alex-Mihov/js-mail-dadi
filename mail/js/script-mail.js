@@ -24,22 +24,26 @@ let guests = [
 
 
 // chiediamo all'utente di inerire la sua mail
-let emailGuest = prompt('inserire la vorsta mail: ')
+let emailGuest = prompt('inserire la vostra mail: ')
 console.log('la vostra mail è: ', emailGuest)
+
+let found = false;
 
 // verifichiamo se la mail è presente nella lista 
 for (let i = 0; i < guests.length; i++) {
 
-    // SE la mail è presente 
-    if (emailGuest === guests[i]){
-
-        // stampiamo il messaggio di entrata 
-        console.log('la sua mail è presente nella lista, la preghiamo di entrare')
-    }
-    // ALTRIMETI preghiamo stampiamo il messaggio chiedendo all'utente di uscire
-    else{
-        console.log('la sua mail non è presente nella lista, la preghiamo di uscire')
-    }
+        // cerchiamo email
+        if (guests === emailGuest) {
+            found = true
+        }
 }
-
-
+    
+// SE la mail non è presente
+if (!found){
+    // stampiamo il messaggio di entrata 
+    console.log('la sua mail non è presente nella lista, la preghiamo di uscire')
+}
+// ALTRIMETI confermiamo la mail
+else{
+    console.log('la sua mail è presente nella lista, la preghiamo di entrare')
+}
